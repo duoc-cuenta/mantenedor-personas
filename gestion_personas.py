@@ -106,3 +106,9 @@ def buscar_persona_por_id(id_persona):
                 print(f"+56 {t}")
 
         i = i + 1
+
+def obtener_persona_por_id(id_persona):
+    for p in personas:
+        if p["id"] == id_persona:
+            return p
+    return None
